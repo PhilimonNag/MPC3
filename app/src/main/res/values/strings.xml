@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MPC</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="need_an_account_register">Need an Account</string>
+    <string name="already_have_an_account_login">already have an account?login</string>
+    <string name="register">register</string>
+    <string name="Register">Register</string>
+    <string name="today_s_bible_verse">Today\'s Bible Verse</string>
+    <string name="psalm_31_24">Psalm 31:24</string>
+    <string name="be_strong_and_let_your_heart_take_courage_all_you_who_wait_for_the_lord">Be strong, and let your heart take courage, all you who wait for the LORD!</string>
+    <string name="user_name">User Name</string>
+    <string name="prayer">Prayer</string>
+    <string name="event">Event</string>
+</resources>

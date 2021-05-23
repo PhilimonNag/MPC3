@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "399014031765",
+    "project_id": "mpc-app-ef8c2",
+    "storage_bucket": "mpc-app-ef8c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399014031765:android:a989d7ec7b43be4e33069c",
+        "android_client_info": {
+          "package_name": "com.philimonnag.mpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399014031765-jlhuqm8q3rme4bmp17dd1bkml6c2qor0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.philimonnag.mpc",
+            "certificate_hash": "1db57c2929532d729fa8d3b10dac9ead3da5c1ce"
+          }
+        },
+        {
+          "client_id": "399014031765-qq24v4trjp9n17q83nd4l7d1gta596gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKQLLtFdVw6ARskKZd_U7JDvmBIziqBbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399014031765-qq24v4trjp9n17q83nd4l7d1gta596gj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

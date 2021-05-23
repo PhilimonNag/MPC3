@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preach"
+        android:textColor="@color/teal_700"
+        android:textSize="22sp"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/preach_for"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preach"
+        android:inputType="textMultiLine"
+        android:background="@drawable/custom_input_bg"/>
+
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/verse_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/today_s_bible_verse"
+            android:textColor="@color/teal_700"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/psalm_31_24"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/verse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/be_strong_and_let_your_heart_take_courage_all_you_who_wait_for_the_lord"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4aa96c"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        android:tint="@android:color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pray_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="#3d84b8"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        app:layout_constraintEnd_toEndOf="@+id/add_button"
+        app:layout_constraintStart_toStartOf="@+id/add_button"
+        app:srcCompat="@drawable/ic_pray"
+        android:tint="@android:color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/event_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="#845460"
+        app:layout_constraintBottom_toTopOf="@+id/pray_button"
+        app:layout_constraintEnd_toEndOf="@+id/pray_button"
+        app:layout_constraintStart_toStartOf="@+id/pray_button"
+        app:srcCompat="@drawable/ic_event"
+        android:tint="@android:color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/preach_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:backgroundTint="#e84545"
+        app:layout_constraintBottom_toTopOf="@+id/event_button"
+        app:layout_constraintEnd_toEndOf="@+id/event_button"
+        app:layout_constraintStart_toStartOf="@+id/event_button"
+        app:srcCompat="@drawable/ic_preach"
+        android:tint="@android:color/white"/>
+    <TextView
+        android:id="@+id/preachText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Preach"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/preach_button"
+        app:layout_constraintEnd_toStartOf="@+id/preach_button"
+        app:layout_constraintTop_toTopOf="@+id/preach_button" />
+
+    <TextView
+        android:id="@+id/eventText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/event_button"
+        app:layout_constraintEnd_toStartOf="@+id/event_button"
+        app:layout_constraintTop_toTopOf="@+id/event_button" />
+
+    <TextView
+        android:id="@+id/prayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prayer"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pray_button"
+        app:layout_constraintEnd_toStartOf="@+id/pray_button"
+        app:layout_constraintTop_toTopOf="@+id/pray_button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
