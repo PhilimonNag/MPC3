@@ -15,11 +15,12 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ForgotPassword extends AppCompatActivity {
- EditText fogotEmail;
+ TextInputLayout fogotEmail;
  Button recovery;
  FirebaseAuth auth;
 
@@ -39,7 +40,7 @@ public class ForgotPassword extends AppCompatActivity {
         recovery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            String email = fogotEmail.getText().toString();
+            String email = fogotEmail.getEditText().getText().toString();
            if(TextUtils.isEmpty(email)){
                fogotEmail.setError("Email is Required");
            }else {

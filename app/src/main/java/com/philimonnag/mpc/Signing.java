@@ -16,12 +16,13 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Signing extends AppCompatActivity {
-    private EditText loginEmail, loginPassword;
+    private TextInputLayout loginEmail, loginPassword;
     Button loginBtn;
     TextView forgotPassword, needAnAccount;
     FirebaseAuth auth;
@@ -51,8 +52,8 @@ public class Signing extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = loginEmail.getText().toString().trim();
-                String password = loginPassword.getText().toString().trim();
+                String email = loginEmail.getEditText().getText().toString().trim();
+                String password = loginPassword.getEditText().getText().toString().trim();
                 if(TextUtils.isEmpty(email)){
                     loginEmail.setError(" Email is Required");
                 }else if(TextUtils.isEmpty(password)){
@@ -82,12 +83,18 @@ public class Signing extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        FirebaseUser user = auth.getCurrentUser();
-//        if (user==null){
-//            startActivity(new Intent(Signing.this,MainActivity.class));
-//        }
-//    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user = auth.getCurrentUser();
+        if (user!=null){
+            startActivity(new Intent(Signing.this,MainActivity.class));
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
+    }
 }
