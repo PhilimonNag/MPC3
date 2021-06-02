@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
      android:scrollbars="vertical"
     tools:context=".MainActivity">
+    <include layout="@layout/custom_toolbar"/>
     <LinearLayout
         android:id="@+id/linearLayout"
         android:padding="8dp"

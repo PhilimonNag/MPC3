@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/toolbarCustom"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <ImageView
+       android:layout_width="22dp"
+       android:layout_height="32dp"
+       android:layout_marginEnd="40dp"
+       android:src="@drawable/menu"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="18sp"
+      android:padding="5dp"
+      android:text="@string/hi"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileImg"
+        android:layout_marginStart="50dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        app:shapeAppearanceOverlay="@style/Circular"/>
+
+</androidx.appcompat.widget.Toolbar>
